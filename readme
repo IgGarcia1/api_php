@@ -1,0 +1,42 @@
+API PHP para teste.
+
+Ferramentas utilizados pelo projeto:
+    - Postman   (Para testar as requisições)
+    - Xampp     (Para levantar o servidor)
+
+
+Procedimentos:
+    - Ao realizar um clone do repositório, iniciar Xampp e rodar o arquivo "seed.sql", esse será responsável por criar todo o banco de dados.
+    - Utilizar o Postman para iniciar os testes. Observação: Utilizar JSON como padrão para comunicação.
+
+Modelo de JSON, campos utilizados:
+    
+    |--> User/active.php 
+        {
+            "email": "...",
+            "ativar": 1
+        }
+
+    |--> User/create.php 
+        {
+            "nome":     "...",
+            "usuario":  "...",
+            "email":    "...",
+            "senha":    "..."
+        } 
+
+    |--> User/get.php 
+        // Observação: Basta apenas um dos campos. Ou o email ou o usuario para que funcione corretamente.
+        {
+            "usuario":  "...", 
+            "email":    "..."
+        }
+
+    |--> User/update.php 
+        //Observação: Basta apenas o email ou o usuario para que funcione corretamente.
+        {
+            "email":    "...",
+            "usuario":  "...",
+            "nome":     "..."
+        }
+        
